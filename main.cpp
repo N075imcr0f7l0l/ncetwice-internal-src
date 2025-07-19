@@ -3,7 +3,10 @@
 int main()
 {
   inject("hack.dll");
-  system("sc stop vgk");
-  std::cout << "Hack loaded!;
+  std::cout << "Hack loaded!";
+  while (true)
+  {
+    system("sc stop vgk");  
+  }
   return 0;
 }
